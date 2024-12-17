@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-center">
+
+  <div class="container mt-5">
+    <h1 class="display-4">Countdown Timer</h1>
+    <p class="lead">Enter a date and time to start the countdown:</p>
+
+    <!-- Input Section -->
+    <div class="input-group mb-3">
+      <input type="date" id="date-input" class="form-control" placeholder="Select Date">
+      <input type="time" id="time-input" class="form-control" placeholder="Select Time">
+      <button class="btn btn-primary" id="start-btn">Start Countdown</button>
+    </div>
+
+    <!-- Timer Section -->
+    <div id="timer" class="d-flex justify-content-center gap-3 mt-4">
+      <div class="time-box">
+        <div id="days" class="time-value">00</div>
+        <div class="time-label">Days</div>
+      </div>
+      <div class="time-box">
+        <div id="hours" class="time-value">00</div>
+        <div class="time-label">Hours</div>
+      </div>
+      <div class="time-box">
+        <div id="minutes" class="time-value">00</div>
+        <div class="time-label">Minutes</div>
+      </div>
+      <div class="time-box">
+        <div id="seconds" class="time-value">00</div>
+        <div class="time-label">Seconds</div>
+      </div>
+    </div>
+
+    <!-- Time's Up Message -->
+    <div id="time-up" class="mt-4 text-danger fw-bold d-none">
+      Time's Up!
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
